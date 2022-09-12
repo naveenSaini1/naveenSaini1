@@ -2,35 +2,307 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
-    <title>Naveen Saini</title>
+    <title> Naveen Saini | Portfolio </title>
+    <link rel="icon" type="image/x-icon" href="./images/me.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-Left">
-                <div class="logo">
-                    <div class="rightLogo">
-                    <img src="img/me.png" alt="logo">
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <div class="rightLogo">
+                <img src="images/me.png" alt="">
+                </div>
+                <a href="/">Naveen<span>Saini</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#project" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, This is</div>
+                <div class="text-2">Naveen Saini</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="https://drive.google.com/drive/folders/1uFePw5hPqHEckD3ExI9MkebgYnWGZRn0?usp=sharing" target="_blank">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                   <img src="./images/" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text"><span class="typing-2"></span></div>
+                    <p>Aspiring Java Backend Developer with a specialization in Java, Spring Boot, SQL, REST APIs, Git/Github, AWS, HTML, CSS, Javascript, Object-oriented, design Self-motivated and curious, with a keen interest in building user-centric products. Looking forward to honing my skills in a challenging work environment </p>
+                    <!-- <a href="#">Download CV</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <!-- <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>Proficient in providing web designs.</p>
                     </div>
-                    <div class="leftLogo">
-                        <h3> Naveen Saini</h3>
-                       
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">REST API</div>
+                        <p>Providing exceptional Rest API's.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">System Design</div>
+                        <p>Proficient in Low Level System Designs</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+
+                    <div class="skills-images" id="java_img">
+                        <img src="./images/java.svg" alt="javaSvg">
+                    </div>
+
+                    <div class="skills-images" id="hibernate_img">
+                        <img src="./images/hibernatesvg.svg" alt="">
+                    </div>
+
+                    
+                    <div class="skills-images">
+                        <img src="./images/mysql.svg" alt="">
+                    </div>
+
+                    
+                    <div class="skills-images" id="github_img">
+                        <img src="./images/github.svg" alt="">
+                    </div>
+
+                </div>
+                <div class="column right">
+                    <div class="skills-images" id="spring_img">
+                        <img src="./images/spring.svg" alt="">
+                    </div>
+
+                    <div class="skills-images" id="aws_img">
+                        <img src="./images/aws.svg" alt="">
+                    </div>
+
+                    <div class="skills-images" id="html_img">
+                        <img src="./images/html.svg" alt="">
+                    </div>
+
+                    <div class="skills-images" id="js_img" >
+                        <img src="./images/javascript.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section start -->
+    <section class="project" id="project">
+        <div class="max-width">
+            <h2 class="title">Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/kfc.jpg" alt="">
+                        <div class="text">KFC Clone</div>
+                        <p>Inspired by KFC is an American fast food restaurant, Kentucky, that specializes in fried chicken, Created a clone of it with the functionalities of the original One..</p>
+                        <p class="techStack">Tech Used: Html, CSS, JavaScript</p>
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/naveenSaini1/KFC-2.O" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://kfc-online-india.netlify.app/" target="_blank">  Live Site  </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/cor.jpg" alt="">
+                        <div class="text">CronoMeter Clone</div>
+                        <p>CronoMeter website Clone, created of the clone of this website with help of my  teammates . And that was good colabarte with my teammates . </p>
+                        <p class="techStack">Tech Used: Html, CSS3, JavaScript  </p>
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/naveenSaini1/adventurous-blood-3456" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://starlit-cassata-1a3d24.netlify.app/" target="_blank">  Live Site  </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="box">
+                        <img src="./images/per_portfolio.png" alt="">
+                        <div class="text">Personal website</div>
+                        <p>This my first project of Personal Website I make this when I was beginner </p>
+                        <p class="techStack">Tech Used: Html, CSS, SCSS , JavaScript</p>
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/codeirax/portfolio" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://codeirax.github.io/portfolio/" target="_blank">  Live Site  </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            <!-- next project adding -->
+            <div class="card">
+                <div class="box">
+                    <img src="images/wea.jpg" alt="">
+                    <div class="text">Weather App </div>
+                    <p>Weather web app to check your weather. In this small project You can see your current location and any locations</p>
+                    <p class="techStack">Tech Used: Html, Css and javascript | Rest Api </p>
+                    <div class="repo-links">
+                        <div class="repo-div">
+                            <span>  <a href="https://amazing-chimera-3fbedf.netlify.app/" target="_blank"> Git Repo </a></span>
+                        </div>
+                        <div class="demo-div">
+                            <span> <a href="https://amazing-chimera-3fbedf.netlify.app/" target="_blank">  Live Site  </a></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="nav-right">
-                <ul>
-                    <li><a href="/">Home</a> </li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Pojects</a> </li>
-                    <li><a href="/">Contact</a> </li>
-                    <li><span class="icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.742,13.045c-0.677,0.18-1.376,0.271-2.077,0.271c-2.135,0-4.14-0.83-5.646-2.336c-2.008-2.008-2.799-4.967-2.064-7.723 c0.092-0.345-0.007-0.713-0.259-0.965C10.444,2.04,10.077,1.938,9.73,2.034C8.028,2.489,6.476,3.382,5.241,4.616 c-3.898,3.898-3.898,10.243,0,14.143c1.889,1.889,4.401,2.93,7.072,2.93c2.671,0,5.182-1.04,7.07-2.929 c1.236-1.237,2.13-2.791,2.583-4.491c0.092-0.345-0.008-0.713-0.26-0.965C21.454,13.051,21.085,12.951,20.742,13.045z M17.97,17.346c-1.511,1.511-3.52,2.343-5.656,2.343c-2.137,0-4.146-0.833-5.658-2.344c-3.118-3.119-3.118-8.195,0-11.314 c0.602-0.602,1.298-1.102,2.06-1.483c-0.222,2.885,0.814,5.772,2.89,7.848c2.068,2.069,4.927,3.12,7.848,2.891 C19.072,16.046,18.571,16.743,17.97,17.346z"></path></svg></span></li>
-                </ul>
+
+
+                       </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Let's work together on something exciting. Big or small.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <a href="mailto:naveensaini94766@gmail.com"> <i class="fas fa-envelope"></i> </a>
+                            <div class="info">
+                                <div class="head"></div>
+                                <div class="sub-title">  <a href="mailto:naveensaini94766@gmail.com"> naveensaini94766@gmail.com</a> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <a href="https://www.linkedin.com/in/naveensaini1/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+                            <div class="info">
+                                <!-- <div class="head">Address</div> -->
+                                <div class="sub-title">  <a href="https://www.linkedin.com/in/naveensaini1/" target="_blank">naveensaini1</a> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <a href="https://github.com/naveenSaini1" target="_blank"> <i class="fab fa-github"></i> </a>
+                            <div class="info">
+                                <!-- <div class="head">Email</div> -->
+                                <div class="sub-title"> <a href="https://github.com/naveenSaini1" target="_blank" >naveenSaini1</a> </div>
+                            </div>
+                        </div>
+                          
+                        <div class="row">
+                            <a > <span class="material-symbols-outlined">
+                                phone_iphone
+                                </span> </a>
+                           <div class="info">
+                               <!-- <div class="head">Email</div> -->
+                               <div class="sub-title"> +91 9728127739 </div>
+                           </div>
+                       </div>
+                        
+
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span class="far fa-copyright"></span> 2022 All Rights Reserved, Made with 💗 by
+        Naveen Saini.</span>
+    </footer>
+
+  
+
+    <script src="script.js"></script>
 </body>
 </html>
