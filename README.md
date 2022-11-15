@@ -17,13 +17,8 @@
 - 👨‍💻 This is [My Portfolio](https://naveensaini1.github.io/naveenSaini1/)
 -  📄 This is [My Resume](https://drive.google.com/file/d/1A51JvEijz2NusIrvH1_qBQCbWxxig5iW/view)
 - 📫 How to reach me: ...**naveensaini94766@gmail.com**
-
-
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
-
-                                                       
-
-<br><br>
+<br>
 <h2 align="center">📊 My Github Stats<h2>
 <div>
   <img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=naveenSaini1&theme=radical" alt="Naveen Saini" height="250px" width="47%" />
